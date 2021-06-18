@@ -9,6 +9,8 @@ class Coffee extends Model
 {
     use HasFactory;
 
+    const SAFE_COFFEE_LEVEL = 500;
+
     protected $fillable = [
         "name",
         "serving",

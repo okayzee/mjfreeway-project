@@ -24,7 +24,7 @@ Route::group([
     function () {
         Route::get('/show', function () {
             return response([
-                'message' => 'Dear nerd, you have landed on citydrop express API. You shouldn\'t be here but... ',
+                'message' => 'Dear nerd, you have landed on MJFreeway API. You shouldn\'t be here but... ',
                 'statusCode' => 200
             ], 200);
         });
@@ -34,6 +34,7 @@ Route::group([
             function () {
                Route::get('/', [\App\Http\Controllers\CoffeeController::class, 'getCoffee']);
                Route::get('/{id}', [\App\Http\Controllers\CoffeeController::class, 'getCoffeeById']);
+               Route::post('/order/{id}', [\App\Http\Controllers\CoffeeController::class, 'orderCoffee']);
             }
         );
     }

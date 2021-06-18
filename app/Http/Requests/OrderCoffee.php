@@ -21,7 +21,7 @@ class OrderCoffee extends FormRequest
     public function rules()
     {
         return [
-            'quantity' => 'required|string',
+            'quantity' => 'required|numeric',
         ];
     }
 
