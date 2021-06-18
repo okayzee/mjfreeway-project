@@ -14,6 +14,7 @@ class Coffee extends Model
     protected $fillable = [
         "name",
         "serving",
+        "image",
         "description"
     ];
 }

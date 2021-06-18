@@ -4,7 +4,7 @@
 
             <div class="col-md-4 card-space" v-for="coffees in coffee" :key="coffees.id">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <img :src="coffees.image" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ coffees.name }} - {{ coffees.serving }}mg</h5>
                         <p class="card-text">{{ coffees.description }}</p>
